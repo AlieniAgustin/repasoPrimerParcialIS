@@ -69,7 +69,14 @@ public class Game {
 
       if(currentFrame.getIsStrike()){
         Frame nextFrame = frames.get(i+1);
-        currentFrame.setBonus(nextFrame.getFstPull() + nextFrame.getSndPull());
+        if(nextFrame.getIsStrike()){
+          int fstBonus = nextFrame.getFstPull();
+          Frame nextNextFrame = frames.get(i+2);
+          int sndBonus = nextNextFrame.getFstPull();
+          currentFrame.setBonus(fstBonus + sndBonus);
+        }else{
+          currentFrame.setBonus(nextFrame.getFstPull() + nextFrame.getSndPull());
+        }
       }
 
       if(currentFrame.getIsSpare()){

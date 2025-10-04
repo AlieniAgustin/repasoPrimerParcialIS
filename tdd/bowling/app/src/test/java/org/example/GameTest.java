@@ -159,4 +159,41 @@ public class GameTest {
     int currentScore = game.score();
     assertEquals(31,currentScore);
   }
+
+  @Test 
+  public void doubleStrike(){
+    Game game = new Game();
+
+    //1st frame 
+    game.roll(10);
+
+    //2nd frame 
+    game.roll(10);
+
+    //3rd frame 
+    game.roll(1);
+    game.roll(3);
+
+    int currentScore = game.score();
+    assertEquals(39,currentScore);
+  }
+
+  @Test 
+  public void spareStrike(){
+    Game game = new Game();
+
+    //1st frame 
+    game.roll(4);
+    game.roll(6);
+
+    //2nd frame 
+    game.roll(10);
+
+    //3rd frame 
+    game.roll(2);
+    game.roll(4);
+
+    int currentScore = game.score();
+    assertEquals(42,currentScore);
+  }
 }
