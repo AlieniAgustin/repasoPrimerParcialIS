@@ -6,14 +6,23 @@ public class FizzBuzz {
     if(n <= 0)
       throw new IllegalArgumentException();
 
-    if(n % 15 == 0)
-      return "FizzBuzz";
-    else if(n % 3 == 0)
-      return "Fizz";
-    else if(n % 5 == 0)
-      return "Buzz";
-    else
-      return "" + n;
+    String answer = "";
+    String numberToString = String.valueOf(n);
+
+    if(numberToString.contains("3"))
+      answer += "Fizz";
+    if(n % 3 == 0)
+      answer += "Fizz";
+
+    if(numberToString.contains("5"))
+      answer += "Buzz";
+    if(n % 5 == 0)
+      answer += "Buzz";
+
+    if(answer.isEmpty())
+      answer = numberToString;
+
+    return answer;
   }
 
 }

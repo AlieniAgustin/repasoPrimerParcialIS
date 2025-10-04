@@ -16,7 +16,7 @@ public class TestFizzBuzz {
     int n = 6; //arrange 
     FizzBuzz fizzBuzz = new FizzBuzz(); //arrange 
     String transformedNumber = fizzBuzz.transformNumber(n); //act 
-    assertEquals("Fizz",transformedNumber);
+    assertEquals("Fizz",transformedNumber); //assert 
   }
 
   @Test 
@@ -24,15 +24,15 @@ public class TestFizzBuzz {
     int n = 10; //arrange 
     FizzBuzz fizzBuzz = new FizzBuzz(); //arrange 
     String transformedNumber = fizzBuzz.transformNumber(n); //act 
-    assertEquals("Buzz",transformedNumber);
+    assertEquals("Buzz",transformedNumber); //assert 
   }
 
   @Test 
-  public void transformFizzBuzzNumber(){
+  public void transformFizzFizzBuzzNumber(){
     int n = 30; //arrange 
     FizzBuzz fizzBuzz = new FizzBuzz(); //arrange 
     String transformedNumber = fizzBuzz.transformNumber(n); //act 
-    assertEquals("FizzBuzz",transformedNumber);
+    assertEquals("FizzFizzBuzz",transformedNumber); //assert 
   }
 
   @Test 
@@ -47,5 +47,19 @@ public class TestFizzBuzz {
     int n = -3; //arrange 
     FizzBuzz fizzBuzz = new FizzBuzz(); //arrange 
     Exception exception = assertThrows(IllegalArgumentException.class, () -> fizzBuzz.transformNumber(n)); //act y assert
+  }
+
+  @Test public void transformFizzBuzzBuzzNumber(){
+    int n = 35; //arrange 
+    FizzBuzz fizzBuzz = new FizzBuzz(); //arrange 
+    String transformedNumber = fizzBuzz.transformNumber(n); //act 
+    assertEquals("FizzBuzzBuzz",transformedNumber); //assert
+  }
+  
+  @Test public void transformFizzBuzzNumber(){
+    int n = 53; //arrange 
+    FizzBuzz fizzBuzz = new FizzBuzz(); //arrange 
+    String transformedNumber = fizzBuzz.transformNumber(n); //act 
+    assertEquals("FizzBuzz",transformedNumber); //assert 
   }
 }
