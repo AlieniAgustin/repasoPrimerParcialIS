@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestDuck" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-10-04T19:59:19" hostname="alieni" time="0.055">
+  <properties/>
+  <testcase name="testModelDuck()" classname="TestDuck" time="0.034"/>
+  <testcase name="testPatoPeronista()" classname="TestDuck" time="0.003"/>
+  <testcase name="testMallardDuck()" classname="TestDuck" time="0.003"/>
+  <testcase name="testModelDuckChangeFlyBehavior()" classname="TestDuck" time="0.002"/>
+  <testcase name="testManyDucks()" classname="TestDuck" time="0.002"/>
+  <system-out><![CDATA[Quack
+I can't fly
+I'm flying with el gral juan domingo!!
+Viva peron carajo
+Quack
+I'm flying!!
+I can't fly
+I'm flying with a rocket
+I'm flying!!
+I'm flying with a rocket
+I'm flying!!
+I can't fly
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
