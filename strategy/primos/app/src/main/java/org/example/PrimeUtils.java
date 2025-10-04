@@ -33,8 +33,7 @@ public class PrimeUtils {
 
       for(int prime : this.primes)
         outputString += "" + prime + "\n";
-
-      outputStrategy.output(outputString);
     }
+    outputStrategy.output(outputString);
   }
 }

@@ -53,4 +53,49 @@ public class PrimeUtilsTest {
         PrimeUtils primeUtils = new PrimeUtils(generator, outputStrategy);
         primeUtils.printFirstNPrimes(0);
     }
+
+
+    static Stream<PrimeGenerator> primeGeneratorProvider(){
+        return Stream.of(
+            new RecursivePrimeGenerator(),
+            new IterativePrimeGenerator(),
+            new StreamPrimeGenerator()
+        );
+    }
+    
+    @ParameterizedTest
+    @MethodSource("primeGeneratorProvider")
+    public void firstPrimeWithMock(PrimeGenerator generator) {
+        MockOutputStrategy mock = new MockOutputStrategy();
+        PrimeUtils primeUtils = new PrimeUtils(generator, mock);
+        primeUtils.printFirstNPrimes(1);
+        assertEquals("First 1 primes: \n2\n",mock.getOutput());
+    }
+
+    @ParameterizedTest
+    @MethodSource("primeGeneratorProvider")
+    public void firstFourPrimesWithMock(PrimeGenerator generator) {
+        MockOutputStrategy mock = new MockOutputStrategy();
+        PrimeUtils primeUtils = new PrimeUtils(generator, mock);
+        primeUtils.printFirstNPrimes(4);
+        assertEquals("First 4 primes: \n2\n3\n5\n7\n",mock.getOutput());
+    }
+
+    @ParameterizedTest
+    @MethodSource("primeGeneratorProvider")
+    public void printNegativeNumberOfPrimesWithMock(PrimeGenerator generator) {
+        MockOutputStrategy mock = new MockOutputStrategy();
+        PrimeUtils primeUtils = new PrimeUtils(generator, mock);
+        assertThrows(IllegalArgumentException.class, () -> primeUtils.printFirstNPrimes(-2));
+    }
+
+    @ParameterizedTest
+    @MethodSource("primeGeneratorProvider")
+    public void printNoPrimeWithMock(PrimeGenerator generator) {
+        MockOutputStrategy mock = new MockOutputStrategy();
+        PrimeUtils primeUtils = new PrimeUtils(generator, mock);
+        primeUtils.printFirstNPrimes(0);
+        assertEquals("First 0 primes: \n",mock.getOutput());
+    }
+   
 }
