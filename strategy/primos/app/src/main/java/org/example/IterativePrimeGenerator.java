@@ -8,6 +8,11 @@ public class IterativePrimeGenerator implements PrimeGenerator{
   public IterativePrimeGenerator(){ }
 
   public List<Integer> getFirstNPrimes(int n){
+
+    if(n == 0) return new ArrayList<>();
+
+    if(n < 0) throw new IllegalArgumentException();
+
     List<Integer> primes = new ArrayList<>();
     int primeCounter = 1;
     primes.add(2);
