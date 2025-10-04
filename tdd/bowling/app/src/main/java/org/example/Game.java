@@ -31,7 +31,14 @@ public class Game {
 
     if(currentFrameRolls == 0){
       currentFrame.setFstPull(pins);
-      currentFrameRolls++;
+
+      //strike 
+      if(currentFrame.getIsStrike()){
+        currentFrameRolls = 0;
+        currentFrameNumber++;
+      }else{
+        currentFrameRolls++;
+      }
     }else{
       int fstPull = currentFrame.getFstPull();
       int maxPins = 10 - fstPull;
@@ -59,7 +66,12 @@ public class Game {
     
     for(int i = 1; i <= 10; i++){
       Frame currentFrame = frames.get(i);
-      
+
+      if(currentFrame.getIsStrike()){
+        Frame nextFrame = frames.get(i+1);
+        currentFrame.setBonus(nextFrame.getFstPull() + nextFrame.getSndPull());
+      }
+
       if(currentFrame.getIsSpare()){
         Frame nextFrame = frames.get(i+1);
         currentFrame.setBonus(nextFrame.getFstPull());

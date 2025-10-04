@@ -140,4 +140,23 @@ public class GameTest {
     int currentScore = game.score();
     assertEquals(39,currentScore);
   }
+
+  @Test 
+  public void simpleStrike(){
+    Game game = new Game();
+
+    //1rd frame 
+    game.roll(1);
+    game.roll(2);
+
+    //2nd frame 
+    game.roll(10);
+
+    //3rd frame 
+    game.roll(4);
+    game.roll(5);
+
+    int currentScore = game.score();
+    assertEquals(31,currentScore);
+  }
 }

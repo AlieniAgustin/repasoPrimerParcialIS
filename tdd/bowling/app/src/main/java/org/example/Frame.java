@@ -20,7 +20,7 @@ public class Frame{
   }
 
   public int getSndPull(){
-    return fstPull;
+    return sndPull;
   }
 
   public int getBonus(){
@@ -29,6 +29,9 @@ public class Frame{
 
   public void setFstPull(int fstPull){
     this.fstPull = fstPull;
+
+    if(this.fstPull == 10)
+      isStrike = true;
   }
 
   public void setSndPull(int sndPull){
