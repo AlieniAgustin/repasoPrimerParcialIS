@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestFizzBuzz" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-10-04T15:04:02" hostname="alieni" time="0.058">
+  <properties/>
+  <testcase name="transformZero()" classname="TestFizzBuzz" time="0.035"/>
+  <testcase name="transformFizzNumber()" classname="TestFizzBuzz" time="0.003"/>
+  <testcase name="transformBuzzNumber()" classname="TestFizzBuzz" time="0.002"/>
+  <testcase name="transformFizzBuzzNumber()" classname="TestFizzBuzz" time="0.003"/>
+  <testcase name="transformNegativeNumber()" classname="TestFizzBuzz" time="0.003"/>
+  <testcase name="transformNormalNumber()" classname="TestFizzBuzz" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
