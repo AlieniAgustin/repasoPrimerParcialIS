@@ -7,28 +7,28 @@ public class PrimeUtilsTest {
 
   @Test 
   public void firstPrime(){
-    PrimeUtils primeUtils = new PrimeUtils();
+    PrimeUtils primeUtils = new PrimeUtils(new RecursivePrimeGenerator());
     int n = 1;
     primeUtils.printFirstNPrimes(n);
   }
 
   @Test 
   public void firstFourPrimes(){
-    PrimeUtils primeUtils = new PrimeUtils();
+    PrimeUtils primeUtils = new PrimeUtils(new RecursivePrimeGenerator());
     int n = 4;
     primeUtils.printFirstNPrimes(n);
   }
 
   @Test 
   public void printNegativeNumberOfPrimes(){
-    PrimeUtils primeUtils = new PrimeUtils();
+    PrimeUtils primeUtils = new PrimeUtils(new RecursivePrimeGenerator());
     int n = -2;
     assertThrows(IllegalArgumentException.class, () -> primeUtils.printFirstNPrimes(n));
   }
 
   @Test 
   public void printNoPrime(){
-    PrimeUtils primeUtils = new PrimeUtils();
+    PrimeUtils primeUtils = new PrimeUtils(new RecursivePrimeGenerator());
     int n = 0;
     primeUtils.printFirstNPrimes(n);
   }
