@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestDuck" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-10-04T19:59:19" hostname="alieni" time="0.055">
+<testsuite name="TestDuck" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-10-04T20:10:12" hostname="alieni" time="0.067">
   <properties/>
-  <testcase name="testModelDuck()" classname="TestDuck" time="0.034"/>
-  <testcase name="testPatoPeronista()" classname="TestDuck" time="0.003"/>
-  <testcase name="testMallardDuck()" classname="TestDuck" time="0.003"/>
-  <testcase name="testModelDuckChangeFlyBehavior()" classname="TestDuck" time="0.002"/>
-  <testcase name="testManyDucks()" classname="TestDuck" time="0.002"/>
+  <testcase name="testModelDuck()" classname="TestDuck" time="0.04"/>
+  <testcase name="testPatoPeronista()" classname="TestDuck" time="0.002"/>
+  <testcase name="testMallardDuck()" classname="TestDuck" time="0.002"/>
+  <testcase name="testModelDuckChangeFlyBehavior()" classname="TestDuck" time="0.003"/>
+  <testcase name="testDucksFlock()" classname="TestDuck" time="0.004"/>
+  <testcase name="testManyDucks()" classname="TestDuck" time="0.003"/>
   <system-out><![CDATA[Quack
 I can't fly
 I'm flying with el gral juan domingo!!
@@ -14,6 +15,16 @@ Quack
 I'm flying!!
 I can't fly
 I'm flying with a rocket
+--ducks flock--
+I can't fly
+I'm flying!!
+I'm flying with el gral juan domingo!!
+I'm flying!!
+Quack
+Quack
+Viva peron carajo
+Quack
+--ducks flock--
 I'm flying!!
 I'm flying with a rocket
 I'm flying!!

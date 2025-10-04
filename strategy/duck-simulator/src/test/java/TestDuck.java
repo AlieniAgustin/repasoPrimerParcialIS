@@ -44,4 +44,21 @@ public class TestDuck {
         peron.performFly();
         peron.performQuack();
     }
+
+    @Test 
+    public void testDucksFlock(){
+      System.out.println("--ducks flock--");
+      Duck model = new ModelDuck();
+      Duck mallard = new MallardDuck();
+      Duck peron = new PatoPeronista();
+      Duck criollo = new PatoCriollo();
+      DucksFlock ducks = new DucksFlock();
+      ducks.addDuck(model);
+      ducks.addDuck(mallard);
+      ducks.addDuck(peron);
+      ducks.addDuck(criollo);
+      ducks.fly();
+      ducks.quack();
+      System.out.println("--ducks flock--");
+    }
 }
