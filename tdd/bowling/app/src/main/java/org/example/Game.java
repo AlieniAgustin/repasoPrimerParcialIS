@@ -14,16 +14,21 @@ public class Game {
     currentFrameRolls = 0;
     frames = new HashMap<>();
     
-    for(int i = 1; i <= 10; i++)
+    for(int i = 1; i <= 12; i++) //11 por si el ultimo es un spare y necesita un extra. 12 por si el ultimo es un strike, entonces necesita dos extra, y el primero de ellos es otro strike
       frames.put(i,new Frame());
   }
 
   public void roll(int pins){
 
-    if(currentFrameNumber > 10)
+    if(currentFrameNumber > 12)
       throw new IllegalArgumentException();
     
-
+    if(currentFrameNumber == 11 && !frames.get(10).getIsStrike() && !frames.get(10).getIsSpare())
+      throw new IllegalArgumentException();
+    
+    if(currentFrameNumber == 12 && frames.get(10).getIsStrike() && !frames.get(11).getIsStrike())
+      throw new IllegalArgumentException();
+    
     if(pins < 0 || pins > 10)
       throw new IllegalArgumentException();
 

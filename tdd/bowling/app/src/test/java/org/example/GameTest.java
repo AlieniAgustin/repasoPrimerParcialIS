@@ -196,4 +196,103 @@ public class GameTest {
     int currentScore = game.score();
     assertEquals(42,currentScore);
   }
+
+  @Test 
+  public void spareAtTheEndOfTheGame(){
+    Game game = new Game();
+
+    //1st frame 
+    game.roll(2);
+    game.roll(3);
+
+    //2nd frame 
+    game.roll(4);
+    game.roll(6);
+
+    //3rd frame 
+    game.roll(1);
+    game.roll(2);
+
+    //4rd frame 
+    game.roll(10);
+
+    //5rd frame 
+    game.roll(2);
+    game.roll(2);
+
+    //6th frame 
+    game.roll(10);
+
+    //7th frame 
+    game.roll(10);
+
+    //8th frame 
+    game.roll(1);
+    game.roll(1);
+
+    //9th frame 
+    game.roll(0);
+    game.roll(2);
+    
+    //10th frame 
+    game.roll(6);
+    game.roll(4);
+
+    //11th frame 
+    game.roll(3);
+
+    int currentScore = game.score();
+    assertEquals(87,currentScore);
+  }
+
+  @Test 
+  public void strikeAtTheEndOfTheGame(){
+    Game game = new Game();
+
+    //1st frame 
+    game.roll(2);
+    game.roll(3);
+
+    //2nd frame 
+    game.roll(4);
+    game.roll(6);
+
+    //3rd frame 
+    game.roll(1);
+    game.roll(2);
+
+    //4rd frame 
+    game.roll(10);
+
+    //5rd frame 
+    game.roll(2);
+    game.roll(2);
+
+    //6th frame 
+    game.roll(10);
+
+    //7th frame 
+    game.roll(10);
+
+    //8th frame 
+    game.roll(1);
+    game.roll(1);
+
+    //9th frame 
+    game.roll(0);
+    game.roll(2);
+    
+    //10th frame 
+    game.roll(10);
+
+    //11th frame 
+    game.roll(3);
+    game.roll(4);
+
+    assertThrows(IllegalArgumentException.class, () -> game.roll(1));
+
+    int currentScore = game.score();
+    assertEquals(91,currentScore);
+  }
+
 }
