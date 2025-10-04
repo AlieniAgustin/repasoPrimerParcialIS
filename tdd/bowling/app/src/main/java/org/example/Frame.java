@@ -4,11 +4,15 @@ public class Frame{
   private int fstPull;
   private int sndPull;
   private int bonus;
+  private boolean isSpare;
+  private boolean isStrike;
 
   public Frame(){ 
     fstPull = 0;
     sndPull = 0;
     bonus = 0;
+    isSpare = false;
+    isStrike = false;
   }
 
   public int getFstPull(){
@@ -29,6 +33,9 @@ public class Frame{
 
   public void setSndPull(int sndPull){
     this.sndPull = sndPull;
+    
+    if(this.fstPull + this.sndPull == 10)
+      this.isSpare = true;
   }
 
   public void setBonus(int bonus){
@@ -39,4 +46,11 @@ public class Frame{
     return fstPull + sndPull + bonus;
   }
 
+  public boolean getIsSpare(){
+    return isSpare;
+  }
+
+  public boolean getIsStrike(){
+    return isStrike;
+  }
 }

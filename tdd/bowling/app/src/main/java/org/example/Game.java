@@ -59,7 +59,12 @@ public class Game {
     
     for(int i = 1; i <= 10; i++){
       Frame currentFrame = frames.get(i);
-      sum += currentFrame.getFrameScore(); 
+      
+      if(currentFrame.getIsSpare()){
+        Frame nextFrame = frames.get(i+1);
+        currentFrame.setBonus(nextFrame.getFstPull());
+      }
+      sum += currentFrame.getFrameScore();
     }
 
     return sum;

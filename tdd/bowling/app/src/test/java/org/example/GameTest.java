@@ -117,4 +117,27 @@ public class GameTest {
     int currentScore = game.score();
     assertEquals(15,currentScore);
   }
+
+  @Test 
+  public void simpleSpare(){
+    Game game = new Game();
+
+    //1st frame 
+    game.roll(6);
+    game.roll(4);
+
+    //2nd frame 
+    game.roll(7);
+    game.roll(3);
+
+    //3rd frame 
+    game.roll(4);
+    game.roll(3);
+
+    //4rd frame 
+    game.roll(1);
+
+    int currentScore = game.score();
+    assertEquals(39,currentScore);
+  }
 }
