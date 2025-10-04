@@ -49,4 +49,20 @@ public class Game {
     return currentFrameNumber;
   }
 
+  public int score(){
+    int finalScore = calculateScore();
+    return finalScore;
+  }
+
+  private int calculateScore(){
+    int sum = 0;
+    
+    for(int i = 1; i <= 10; i++){
+      Frame currentFrame = frames.get(i);
+      sum += currentFrame.getFrameScore(); 
+    }
+
+    return sum;
+  }
+
 }

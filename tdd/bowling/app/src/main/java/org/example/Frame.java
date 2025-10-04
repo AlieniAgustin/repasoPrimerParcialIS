@@ -5,7 +5,11 @@ public class Frame{
   private int sndPull;
   private int bonus;
 
-  public Frame(){ }
+  public Frame(){ 
+    fstPull = 0;
+    sndPull = 0;
+    bonus = 0;
+  }
 
   public int getFstPull(){
     return fstPull;
@@ -29,6 +33,10 @@ public class Frame{
 
   public void setBonus(int bonus){
     this.bonus = bonus;
+  }
+
+  public int getFrameScore(){
+    return fstPull + sndPull + bonus;
   }
 
 }

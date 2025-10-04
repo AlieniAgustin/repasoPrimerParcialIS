@@ -102,5 +102,19 @@ public class GameTest {
     assertThrows(IllegalArgumentException.class, () -> game.roll(3));
   }
 
+  @Test 
+  public void scoreOfTwoNormalRolls(){
+    Game game = new Game();
 
+    //1st frame 
+    game.roll(3);
+    game.roll(6);
+
+    //2nd frame 
+    game.roll(2);
+    game.roll(4);
+
+    int currentScore = game.score();
+    assertEquals(15,currentScore);
+  }
 }
