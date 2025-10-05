@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="abstractfactory.TestAbstractFactory" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-10-05T15:12:10" hostname="alieni" time="0.014">
+<testsuite name="abstractfactory.TestAbstractFactory" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-10-05T15:32:19" hostname="alieni" time="0.011">
   <properties/>
-  <testcase name="testOrderChicagoPizza()" classname="abstractfactory.TestAbstractFactory" time="0.008"/>
-  <testcase name="testOrderNYPizza()" classname="abstractfactory.TestAbstractFactory" time="0.005"/>
+  <testcase name="testOrderChicagoPizza()" classname="abstractfactory.TestAbstractFactory" time="0.006"/>
+  <testcase name="testOrderNYPizza()" classname="abstractfactory.TestAbstractFactory" time="0.004"/>
   <system-out><![CDATA[--- Making a Chicago Style Cheese Pizza ---
 Preparing Chicago Style Cheese Pizza
 Bake for 25 minutes at 350
