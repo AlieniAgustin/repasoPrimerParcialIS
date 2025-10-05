@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestObservers" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-10-05T01:16:52" hostname="alieni" time="0.076">
+<testsuite name="TestObservers" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-10-05T01:29:22" hostname="alieni" time="0.11">
   <properties/>
-  <testcase name="testCelsius()" classname="TestObservers" time="0.044"/>
-  <testcase name="testRemoveObserver()" classname="TestObservers" time="0.022"/>
-  <testcase name="testThreeObservers()" classname="TestObservers" time="0.004"/>
+  <testcase name="testCelsius()" classname="TestObservers" time="0.063"/>
+  <testcase name="testHeatIndex()" classname="TestObservers" time="0.004"/>
+  <testcase name="testRemoveObserver()" classname="TestObservers" time="0.026"/>
+  <testcase name="testThreeObservers()" classname="TestObservers" time="0.005"/>
   <system-out><![CDATA[Current conditions: 20.0C degrees
+Heat index: 94.981155!
 Current conditions: 80.0F degrees and 65.0% humidity
 Avg/Max/Min temperature = 80.0/80.0/80.0
 Forecast: Improving weather on the way!

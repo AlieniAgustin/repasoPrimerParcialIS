@@ -41,4 +41,11 @@ public class TestObservers {
         weatherData.setMeasurements(68,2,2);
     }
 
+    @Test 
+    public void testHeatIndex(){
+        WeatherData weatherData = new WeatherData();
+        Observer heatIndex = new HeatIndexDisplay(weatherData);
+        weatherData.setMeasurements(86,70,2);
+    }
+
 }
