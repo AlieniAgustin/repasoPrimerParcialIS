@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="abstractfactory.TestAbstractFactory" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-10-05T16:09:00" hostname="alieni" time="0.036">
+<testsuite name="abstractfactory.TestAbstractFactory" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-10-05T16:47:33" hostname="alieni" time="0.017">
   <properties/>
-  <testcase name="testOrderChicagoPizza()" classname="abstractfactory.TestAbstractFactory" time="0.024"/>
+  <testcase name="testOrderChicagoPizza()" classname="abstractfactory.TestAbstractFactory" time="0.007"/>
   <testcase name="testOrderNYPizza()" classname="abstractfactory.TestAbstractFactory" time="0.004"/>
-  <testcase name="testOrderArgentinaPizza()" classname="abstractfactory.TestAbstractFactory" time="0.005"/>
+  <testcase name="testOrderArgentinaPizza()" classname="abstractfactory.TestAbstractFactory" time="0.004"/>
   <system-out><![CDATA[--- Making a Chicago Style Cheese Pizza ---
 Preparing Chicago Style Cheese Pizza
 Bake for 25 minutes at 350

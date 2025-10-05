@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="factorymethod.TestFactoryMethod" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-10-05T16:09:00" hostname="alieni" time="0.013">
+<testsuite name="factorymethod.TestFactoryMethod" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-10-05T16:47:33" hostname="alieni" time="0.015">
   <properties/>
-  <testcase name="testOrderChicagoPizza()" classname="factorymethod.TestFactoryMethod" time="0.004"/>
-  <testcase name="testOrderNYPizza()" classname="factorymethod.TestFactoryMethod" time="0.003"/>
+  <testcase name="testOrderChicagoPizza()" classname="factorymethod.TestFactoryMethod" time="0.005"/>
+  <testcase name="testOrderNYPizza()" classname="factorymethod.TestFactoryMethod" time="0.004"/>
   <testcase name="testOrderArgentinaPizza()" classname="factorymethod.TestFactoryMethod" time="0.004"/>
   <system-out><![CDATA[--- Making a Chicago Style Deep Dish Cheese Pizza ---
 Prepare Chicago Style Deep Dish Cheese Pizza
