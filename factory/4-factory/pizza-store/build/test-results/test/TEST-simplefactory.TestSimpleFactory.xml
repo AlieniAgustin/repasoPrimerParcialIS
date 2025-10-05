@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="simplefactory.TestSimpleFactory" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-10-05T15:32:19" hostname="alieni" time="0.007">
+<testsuite name="simplefactory.TestSimpleFactory" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-10-05T16:09:00" hostname="alieni" time="0.006">
   <properties/>
   <testcase name="testOrderMozzarellaPizza()" classname="simplefactory.TestSimpleFactory" time="0.002"/>
-  <testcase name="testOrderVeggiePizza()" classname="simplefactory.TestSimpleFactory" time="0.002"/>
+  <testcase name="testOrderVeggiePizza()" classname="simplefactory.TestSimpleFactory" time="0.001"/>
   <testcase name="testOrderCheesePizza()" classname="simplefactory.TestSimpleFactory" time="0.001"/>
   <system-out><![CDATA[Preparing Mozzarella Pizza
 Baking Mozzarella Pizza

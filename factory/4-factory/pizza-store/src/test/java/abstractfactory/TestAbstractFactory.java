@@ -1,6 +1,7 @@
 package abstractfactory;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestAbstractFactory {
 
@@ -36,5 +37,22 @@ public class TestAbstractFactory {
 
         pizza = chicagoStore.orderPizza("veggie");
         System.out.println("Joel ordered a " + pizza + "\n");
+    }
+
+    @Test
+    public void testOrderArgentinaPizza() {
+        PizzaStore argentinaStore = new ArgentinaPizzaStore();
+
+        Pizza pizza = argentinaStore.orderPizza("cheese");
+        System.out.println("Peron ordered a " + pizza + "\n");
+
+        pizza = argentinaStore.orderPizza("clam");
+        System.out.println("Peron ordered a " + pizza + "\n");
+
+        pizza = argentinaStore.orderPizza("pepperoni");
+        System.out.println("Peron ordered a " + pizza + "\n");
+
+        pizza = argentinaStore.orderPizza("veggie");
+        System.out.println("Peron ordered a " + pizza + "\n");
     }
 }
