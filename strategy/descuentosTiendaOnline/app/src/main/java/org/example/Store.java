@@ -14,6 +14,10 @@ public class Store{
     this.discount = discount;
   }
 
+  public void setDiscount(Discount discount){
+    this.discount = discount;
+  }
+
   public void addProduct(Product product){
     products.add(product);
   }
