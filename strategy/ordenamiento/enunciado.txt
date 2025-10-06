@@ -1,0 +1,5 @@
+Un programa debe ordenar listas de números enteros, pero el método de ordenamiento puede variar según la situación: a veces se quiere usar burbuja, otras quicksort, mergesort, o incluso delegar al algoritmo por defecto de la biblioteca estándar.
+
+Diseñá un sistema que permita cambiar el algoritmo de ordenamiento en tiempo de ejecución sin modificar el código que usa el sistema de ordenamiento.
+
+Utilizá el patrón Strategy para encapsular los distintos algoritmos de ordenamiento.
