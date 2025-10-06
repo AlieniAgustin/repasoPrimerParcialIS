@@ -1,0 +1,9 @@
+Una aplicación financiera muestra en tiempo real los precios de distintas acciones en la bolsa.
+Existe un objeto central (Subject) que mantiene la lista de precios actualizados.
+Distintos módulos observadores (un tablero de inversión) deben reaccionar cuando cambian los precios.
+
+Diseñá el sistema usando el patrón Observer con enfoque pull:
+
+Cuando el Subject notifique un cambio, no enviará los nuevos precios directamente.
+
+En cambio, cada observador deberá consultar (pull) al Subject para obtener la información que necesite (por ejemplo, la lista completa de valores).

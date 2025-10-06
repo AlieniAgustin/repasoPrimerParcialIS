@@ -1,0 +1,4 @@
+Una red social notifica a sus usuarios cuando alguien publica una nueva historia.
+Cada usuario puede seguir a varios otros, y cuando alguno publica algo, se envía directamente el contenido de la nueva publicación a todos sus seguidores.
+
+Implementá este comportamiento usando el patrón Observer en su versión push: el sujeto (usuario que publica) debe enviar directamente los datos de la publicación a cada observador.
