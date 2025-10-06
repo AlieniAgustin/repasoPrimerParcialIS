@@ -1,0 +1,5 @@
+Una tienda virtual necesita aplicar diferentes tipos de descuentos a los productos, dependiendo del cliente o la promoción activa. Algunos descuentos pueden ser porcentuales, otros de monto fijo, y en ciertos casos no se aplica ningún descuento.
+
+Diseñá un sistema que permita cambiar fácilmente la forma en que se calcula el descuento sin modificar la lógica del carrito de compras.
+
+Aplicá el patrón Strategy para representar las distintas estrategias de cálculo del precio final.
