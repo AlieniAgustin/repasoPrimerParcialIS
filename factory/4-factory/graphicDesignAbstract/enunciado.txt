@@ -1,0 +1,4 @@
+Una aplicación de diseño gráfico debe poder cambiar entre temas visuales (dark, light, retro).
+Cada tema define su propio conjunto de botones, menús y cuadros de texto con estilos diferentes.
+
+Usá el patrón Abstract Factory para que el sistema pueda crear familias completas de elementos de interfaz compatibles con cada tema, sin conocer las clases concretas que los implementan.
