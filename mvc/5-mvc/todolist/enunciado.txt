@@ -1,0 +1,6 @@
+Implementá una pequeña aplicación de lista de tareas usando el patrón MVC.
+El modelo administra la lista (agregar, marcar como hecha, eliminar).
+La vista muestra las tareas en pantalla.
+El controlador gestiona las acciones del usuario (por ejemplo, agregar o completar una tarea).
+
+El ejercicio apunta a comprender cómo el controlador coordina la comunicación entre la vista y el modelo.
