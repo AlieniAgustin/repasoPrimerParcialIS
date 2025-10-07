@@ -1,0 +1,4 @@
+Un sistema de mensajería necesita enviar notificaciones por distintos medios: correo electrónico, SMS o notificación push.
+Cada tipo de notificación tiene su propia forma de creación y envío.
+
+Diseñá una jerarquía que use el patrón Factory Method para definir un método createNotification() que permita crear el tipo de notificación adecuado según la subclase concreta.
